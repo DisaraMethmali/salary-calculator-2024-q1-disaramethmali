@@ -1,1 +1,0 @@
-# salary-calculator-2024-q1-disaramethmali
