@@ -1,9 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { SalaryProvider } from './context/SalaryContext';
 import SalaryCalculator from './components/SalaryCalculator';
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle `
+const GlobalStyle = createGlobalStyle`
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,12 +14,14 @@ const GlobalStyle = createGlobalStyle `
 `;
 
 const App = () => {
-    return (
-       <SalaryProvider>
+  return (
+    <SalaryProvider>
       <GlobalStyle />
-      <SalaryCalculator />
-  </SalaryProvider>
-    );
+      <Router>
+        <Route path="/cal" component={SalaryCalculator} />
+      </Router>
+    </SalaryProvider>
+  );
 };
 
 export default App;
