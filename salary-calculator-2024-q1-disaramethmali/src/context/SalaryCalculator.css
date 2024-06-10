@@ -6,6 +6,7 @@
     align-items: center;
     /* Center contents vertically */
     padding: 50px;
+    padding-right: 20px;
     width: 100%;
     position: relative;
     /* Position relative for absolute positioning of the reset button */
@@ -17,13 +18,12 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .reset-button {
     position: absolute;
-    top: 150px;
-    right: 650px;
+    top: 170px;
+    right: 570px;
     cursor: default;
 }
 
@@ -81,13 +81,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    cursor: pointer;
     /* Change cursor to pointer on hover */
-}
-
-#reset:hover {
-    opacity: 0.8;
-    /* Reduce opacity on hover */
 }
 
 .container {
