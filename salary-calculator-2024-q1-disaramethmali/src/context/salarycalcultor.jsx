@@ -109,15 +109,16 @@ const SalaryCalculator = () => {
           value={earning.amount}
           onChange={(e) => handleEarningsChange(index, 'amount', Number(e.target.value))}
         />
-        <label>
+         <button className="remove-button" onClick={() => removeEarning(index)}>✖</button>
+       
           EPF/ETF
           <input
             type="checkbox"
             checked={earning.epf}
             onChange={(e) => handleEarningsChange(index, 'epf', e)}
           />
-        </label>
-        <button className="remove-button" onClick={() => removeEarning(index)}>✖</button>
+       
+       
       </div>
     ))}
     <button onClick={addEarning}>+Add New Earning</button>
@@ -157,15 +158,15 @@ const SalaryCalculator = () => {
         </div>
         <div className="result-item">
           <span>Gross Deduction:</span>
-          <span>{results?.grossDeduction?.toFixed(2)}</span>
+          <span>-{results?.grossDeduction?.toFixed(2)}</span>
         </div>
         <div className="result-item">
           <span>Employee EPF (8%):</span>
-          <span>{results?.employeeEPF?.toFixed(2)}</span>
+          <span>-{results?.employeeEPF?.toFixed(2)}</span>
         </div>
         <div className="result-item">
           <span>APIT:</span>
-          <span>{results?.APIT?.toFixed(2)}</span>
+          <span>-{results?.APIT?.toFixed(2)}</span>
         </div>
         <div className="result-item">
           <span>Net Salary (Take Home):</span>
