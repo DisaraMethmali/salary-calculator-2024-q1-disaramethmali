@@ -1,0 +1,163 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    /* Center contents horizontally */
+    align-items: center;
+    /* Center contents vertically */
+    padding: 50px;
+    padding-right: 20px;
+    width: 100%;
+    position: relative;
+    /* Position relative for absolute positioning of the reset button */
+}
+
+.salary-calculator,
+.results {
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 50px;
+}
+
+.reset-button {
+    position: absolute;
+    top: 170px;
+    right: 570px;
+    cursor: default;
+}
+
+.salary-calculator h2,
+.results h3,
+.results h4 {
+    margin-bottom: 20px;
+}
+
+.salary-calculator div,
+.results .result-item {
+    margin-bottom: 15px;
+}
+
+.salary-calculator label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.salary-calculator input[type="number"],
+.salary-calculator input[type="text"] {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.salary-calculator input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.salary-calculator button {
+    margin-top: 10px;
+    color: #0052EA;
+    /* Set text color to blue */
+    border: none;
+    /* Remove button border */
+    background: none;
+    /* Remove button background */
+    box-shadow: none;
+    /* Remove button shadow */
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item span {
+    font-size: 16px;
+}
+
+#reset {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* Change cursor to pointer on hover */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.salary-calculator {
+    width: 60%;
+    max-width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.salary-calculator h2,
+.salary-calculator h3 {
+    margin-bottom: 20px;
+}
+
+.salary-calculator label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.salary-calculator input[type="number"],
+.salary-calculator input[type="text"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.salary-calculator input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.salary-calculator button {
+    margin-top: 10px;
+    color: #0052EA;
+    background: none;
+    border: none;
+}
+
+.salary-calculator .remove-button {
+    margin-left: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+}
+
+.salary-calculator .remove-button:hover {
+    color: red;
+}
+
+.salary-calculator .earning-item,
+.salary-calculator .deduction-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.salary-calculator .earning-item input,
+.salary-calculator .deduction-item input,
+.salary-calculator .earning-item label {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.salary-calculator .earning-item input[type="number"],
+.salary-calculator .deduction-item input[type="number"] {
+    width: 100px;
+}
+
+.salary-calculator .earning-item label {
+    margin-right: 10px;
+}
